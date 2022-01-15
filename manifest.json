@@ -1,0 +1,36 @@
+{
+    "name": "text-to-QR",
+    "author": "Adham Khalifa",
+    "version": "0.1.0",
+    "description": "",
+    "manifest_version": 2,
+    "icons": {
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+    },
+    "permissions": [
+        "clipboardWrite",
+        "clipboardRead",
+        "tabs",
+        "storage",
+        "contextMenus",
+        "webNavigation",
+        "webRequest",
+        "webRequestBlocking"
+    ],
+    "background": {
+        "scripts": [
+            "script.js"
+        ]
+    },
+    "commands": {
+        "text-to-QR": {
+            "suggested_key": {
+                "default": "Ctrl+K",
+                "mac": "MacCtrl+K"
+            },
+            "description": "Opens hello.html"
+        }
+    }
+}
